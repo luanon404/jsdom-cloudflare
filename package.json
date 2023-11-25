@@ -1,0 +1,49 @@
+{
+  "name": "jsdom-cloudflare",
+  "version": "1.0.0",
+  "description": "Thư viện jsdom nhưng được chỉnh sửa để chạy mã lệnh đã được xáo trộn của cloudflare để trả về dữ liệu như một trình duyệt.",
+  "license": "GPL-3.0",
+  "repository": "luanon404/jsdom-cloudflare",
+  "dependencies": {
+    "abab": "^2.0.6",
+    "cssstyle": "^3.0.0",
+    "canvas": "^2.11.2",
+    "data-urls": "^4.0.0",
+    "decimal.js": "^10.4.3",
+    "domexception": "^4.0.0",
+    "form-data": "^4.0.0",
+    "html-encoding-sniffer": "^3.0.0",
+    "http-proxy-agent": "^5.0.0",
+    "https-proxy-agent": "^5.0.1",
+    "is-potential-custom-element-name": "^1.0.1",
+    "mitt": "^3.0.1",
+    "nwsapi": "^2.2.4",
+    "node-fetch-commonjs": "^3.3.2",
+    "parse5": "^7.1.2",
+    "rrweb-cssom": "^0.6.0",
+    "saxes": "^6.0.0",
+    "symbol-tree": "^3.2.4",
+    "tough-cookie": "^4.1.2",
+    "tr46": "^5.0.0",
+    "uuid-v4": "^0.1.0",
+    "w3c-xmlserializer": "^4.0.0",
+    "webidl-conversions": "^7.0.0",
+    "whatwg-encoding": "^2.0.0",
+    "whatwg-mimetype": "^3.0.0",
+    "whatwg-url": "^12.0.1",
+    "ws": "^8.13.0",
+    "xml-name-validator": "^4.0.0"
+  },
+  "devDependencies": {
+    "webidl2js": "^17.1.0"
+  },
+  "scripts": {
+    "build": "yarn convert-idl && yarn generate-js-globals",
+    "convert-idl": "node ./scripts/webidl/convert.js",
+    "generate-js-globals": "node ./scripts/generate-js-globals.js"
+  },
+  "main": "./lib/api.js",
+  "engines": {
+    "node": ">=20"
+  }
+}
