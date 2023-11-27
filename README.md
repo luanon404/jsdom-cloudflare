@@ -10,4 +10,4 @@
 
 # Cài đặt
 
-- `npm install https://github.com/luanon404/jsdom-cloudflare/tarball/build --omit=dev`.
+- `npm install -g https://github.com/luanon404/jsdom-cloudflare/tarball/build --omit=dev`.
