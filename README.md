@@ -6,7 +6,7 @@
 
 - `git clone https://github.com/luanon404/jsdom-cloudflare`.
 - `yarn install --dev`.
-- `yarn build`
+- `yarn build`.
 
 # Cài đặt
 
